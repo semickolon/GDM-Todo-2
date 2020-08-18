@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="Gradient" id=2]
+colors = PoolColorArray( 0.988235, 0.360784, 0.490196, 1, 0.415686, 0.509804, 0.984314, 1 )
+
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = SubResource( 3 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[node name="Background" type="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -0.840942
+margin_bottom = -0.840942
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
